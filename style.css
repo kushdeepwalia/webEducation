@@ -1,0 +1,77 @@
+/* index.html */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada&family=Lobster&display=swap');
+
+/* 
+    font-family: 'Lemonada', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Dancing Script', cursive;
+*/
+
+*{
+    font-family: 'Lobster', cursive;
+}
+
+.web-name{
+    /* font-weight: bold; */
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.menuitems{
+    color: white;
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 2px solid black;
+}
+
+.menuitems a:hover{
+    border-bottom: 2px solid black;
+}
+
+.menuitems:last-child{
+    border-right: none;
+}
+
+.home-image{
+    height: 90vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0);
+}
+
+button{
+    outline: none;
+    width: 150px;
+}
+
+.btn-text{
+    font-size: 30px;
+}
+
+.image{
+    background-image: url('Images/home-bg.jpg');
+    width: inherit;
+    height: inherit;
+    background-size: 100vw 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+/* info.html */
+
+/* contact.html */
