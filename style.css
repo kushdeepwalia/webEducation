@@ -1,19 +1,9 @@
-/* index.html */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada&family=Lobster&display=swap');
-
-/* 
-    font-family: 'Lemonada', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Dancing Script', cursive;
-*/
-
 a:hover{
     text-decoration: none;
 }
 
 .web-name{
-    /* font-weight: bold; */
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Eagle Lake';
     text-transform: uppercase;
     font-size: 2rem;
     padding-left: 15px;
