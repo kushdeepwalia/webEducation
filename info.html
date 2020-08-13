@@ -73,7 +73,13 @@
                                 <h3>&lt;! DOCTYPE html&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;! DOCTYPE html&gt;</strong> declaration defines that this document is an <strong>HTML5</strong> document.
+                                All HTML documents must start with a <strong>&lt;! DOCTYPE html&gt;</strong> declaration. <br>
+                                The declaration is not an HTML tag. It is an "information" to the browser about what docuement type to expect. <br><br>
+                                In HTML 5, the declaration is simple: <br>
+                                <div class="card-header w-50">
+                                    <strong>&lt;<span class="text-secondary">! DOCTYPE</span> <span class="text-danger">html</span>&gt;</strong>
+                                </div> <br>
+                                <a href="https://www.w3schools.com/tags/tag_doctype.asp">Resource Link</a>
                             </div>
                         </div>
                         <br>
@@ -82,7 +88,9 @@
                                 <h3>&lt;html&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;html&gt;</strong> element is the root element of an HTML Page.
+                                The <strong>&lt;html&gt;</strong> element is the root element of an HTML Page. <br>
+                                The <strong>&lt;html&gt;</strong> tag is the container for all other HTML elements (expect for the <strong>&lt;!DOCTYPE&gt;</strong> tag). <br><br>
+                                <a href="https://www.w3schools.com/tags/tag_html.asp">Resource Link</a>
                             </div>
                         </div>
                         <br>
@@ -91,7 +99,18 @@
                                 <h3>&lt;head&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;head&gt;</strong> element contains meta information about the HTML page.
+                                The <strong>&lt;head&gt;</strong> element is a container for metadata (data about data) and is placed between the &lt;html&gt; and the &lt;body&gt; tag. <br><br>
+                                The following elements can go the inside the <strong>&lt;head&gt;</strong> element: <br>
+                                <ul>
+                                    <li>&lt;title&gt; (Required in every HTML document)</li>
+                                    <li>&lt;style&gt;</li>
+                                    <li>&lt;base&gt;</li>
+                                    <li>&lt;link&gt;</li>
+                                    <li>&lt;meta&gt;</li>
+                                    <li>&lt;script&gt;</li>
+                                    <li>&lt;noscript&gt;</li>
+                                </ul> <br>
+                                <a href="https://www.w3schools.com/tags/tag_head.asp">Resource Link</a>
                             </div>
                         </div>
                         <br>
@@ -100,7 +119,16 @@
                                 <h3>&lt;title&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;title&gt;</strong> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+                                The <strong>&lt;title&gt;</strong> tag defines the title of the document. The title must be <strong>text-only</strong>, and it is shown in the browser's title bar or in the page's tab. <br>
+                                The <strong>&lt;title&gt;</strong> tag is required in HTML documents! <br>
+                                The <strong>&lt;title&gt;</strong> element: 
+                                <ul>
+                                    <li>defines a title in the browser toolbar</li>
+                                    <li>provides a title for the page when it is added to favorites</li>
+                                    <li>displays a title for the page in search-engine results</li>
+                                </ul>
+                                <br>
+                                <a href="https://www.w3schools.com/tags/tag_head.asp">Resource Link</a>
                             </div>
                         </div>
                         <br>
@@ -177,10 +205,62 @@
                         <br>
                         <div class="card">
                             <div class="card-header">
+                                <h3>&lt;header&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;header&gt;</strong> element represents a container for introductory content or a set of navigational links. <br>
+                                A <strong>&lt;header&gt;</strong> element typically contains: 
+                                <ul>
+                                    <li>one or more heading elements (<strong>&lt;h1&gt;</strong> - <strong>&lt;h6&gt;</strong>)</li>
+                                    <li>logo or icon</li>
+                                    <li>authorship information</li>
+                                </ul>
+                                <br>
+                                <a target="_blank" href="https://www.w3schools.com/tags/tag_header.asp"> Resource link </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>&lt;footer&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;footer&gt;</strong> tag defines a footer for a document or section. <br>
+                                A <strong>&lt;footer&gt;</strong> element typically contains:
+                                <ul>
+                                    <li>authorship information</li>
+                                    <li>copyright information</li>
+                                    <li>contact information</li>
+                                    <li>sitemap</li>
+                                    <li>back to top links</li>
+                                    <li>related documents</li>
+                                </ul>
+                                <br>
+                                <a target="_blank" href="https://www.w3schools.com/tags/tag_footer.asp"> Resource link </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>&lt;style&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;style&gt;</strong> tag is used to define style information (CSS) for a document. <br>
+                                Inside the <strong>&lt;style&gt;</strong> element you specify how HTML elements should render in a browser. <br>
+                                <br>
+                                <a target="_blank" href="https://www.w3schools.com/tags/tag_nav.asp"> Resource link </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
                                 <h3>&lt;body&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;body&gt;</strong> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinnks, tables, lists, etc.
+                                The <strong>&lt;body&gt;</strong> tag defines the document's body. <br>
+                                The <strong>&lt;body&gt;</strong> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+                                <br>
+                                <a target="_blank" href="https://www.w3schools.com/tags/tag_body.asp"> Resource link </a>
                             </div>
                         </div>
                         <br>
@@ -190,6 +270,15 @@
                             </div>
                             <div class="card-body">
                                 <strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</strong> defines a size to the heading.
+                                <ul class="list-unstyled">
+                                    <li><h1>&lt;h1&gt;</h1></li>
+                                    <li><h2>&lt;h2&gt;</h2></li>
+                                    <li><h3>&lt;h3&gt;</h3></li>
+                                    <li><h4>&lt;h4&gt;</h4></li>
+                                    <li><h5>&lt;h5&gt;</h5></li>
+                                    <li><h6>&lt;h6&gt;</h6></li>
+                                </ul>
+                                <a target="_blank" href="https://www.w3schools.com/html/html_headings.asp"> Resource link </a>
                             </div>
                         </div>
                         <br>
@@ -198,18 +287,66 @@
                                 <h3>&lt;p&gt;</h3>
                             </div>
                             <div class="card-body">
-                                The <strong>&lt;p&gt;</strong> element defines a paragraph
+                                The <strong>&lt;p&gt;</strong> element defines a paragraph. <br>
+                                A Paragraph always start on a new line, and browsers automatically add some white space (a margin) before and afte a paragraph. <br><br>
+                                <a target="_blank" href="https://www.w3schools.com/html/html_paragraphs.asp"> Resource link </a>
                             </div>
                         </div>
-                        <!-- 
-                            script -> src
-                            link -> rel, href
-                            nav, div, header, footer -> class, id, style
-                            style
-                            a -> href, data attributes
-                            ul, ol, li
-                            section
-                         -->
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>&lt;strong&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;strong&gt;</strong> tag is used to define text with strong importance. The content inside is typically displayed in bold.<br><br>
+                                <a target="_blank" href="https://www.w3schools.com/html/html_paragraphs.asp"> Resource link </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>&lt;a&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;a&gt;</strong> tag defines a hyperlink, which is used to link from one page to another. <br><br>
+                                The most important attribute of the <strong>&lt;a&gt;</strong> element is the <strong>href</strong> attribute, which indicates the link's destination. <br><br>
+                                By Default, links will appear as follows in all browsers: <br>
+                                <ul>
+                                    <li>An unvisited link is underlined and blue <a style="text-decoration: underline; color: blue;" target="_blank" href="https://www.w3schools.com/tags/tag_a.asp"> Resource link </a> </li>
+                                    <li>A visited link is underlined and purple <a style="text-decoration: underline; color: purple;" target="_blank" href="https://www.w3schools.com/tags/tag_a.asp"> Resource link </a></>
+                                    <li>An active link is underlined and red <a style="text-decoration: underline; color: red;" target="_blank" href="https://www.w3schools.com/tags/tag_a.asp"> Resource link </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>List Tags</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>The <strong>&lt;ul&gt;</strong> tag defines an unordered (bulleted) list.</li>
+                                    <li>Use the <strong>&lt;ul&gt;</strong> tag together with the <a href="https://www.w3schools.com/tags/tag_li.asp"><strong>&lt;li&gt;</strong></a> tag to create unordered lists.</li>
+                                </ul>
+                                <a href="https://www.w3schools.com/tags/tag_ul.asp">Resource Link</a><br><br>
+                                <ol>
+                                    <li>The <strong>&lt;ol&gt;</strong> tag defines an ordered list.</li>
+                                    <li>An ordered list can be numberical or alphabetical.</li>
+                                </ol>
+                                <a href="https://www.w3schools.com/tags/tag_ol.asp">Resource Link</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>&lt;section&gt;</h3>
+                            </div>
+                            <div class="card-body">
+                                The <strong>&lt;section&gt;</strong> tag defines a section in a document. <br><br>
+                                <a target="_blank" href="https://www.w3schools.com/tags/tag_section.asp"> Resource link </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
