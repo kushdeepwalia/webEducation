@@ -36,8 +36,12 @@ nav.header{
     justify-content: center;
 }
 
-.menuitems a:hover{
-    text-decoration: none;
+.menu > a{
+    color: white;
+}
+
+.menu > a:hover{
+    background-color: white;
 }
 
 .name:hover{
@@ -45,23 +49,8 @@ nav.header{
     text-decoration: underline;
 }
 
-.name,.menuitems a{
-    color: white;
-}
-.menuitems{
-    color: white;
-    font-size: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-    border-right: 2px solid black;
-}
-
-.menuitems a:hover{
-    border-bottom: 2px solid black;
-}
-
-.menuitems:last-child{
-    border-right: none;
+.name{
+    color: slateblue;
 }
 
 .home-image{
