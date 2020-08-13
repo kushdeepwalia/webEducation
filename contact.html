@@ -19,13 +19,62 @@
     </head>
     <body>
         <nav class="navbar navbar-expand bg-dark header text-primary">
-            <a href="/index.html"><h1 class="web-name">Lorem, ipsum.</h1></a>
-            <ul class="nav navbar-nav menu">
-                <li class="menuitems active"><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <!-- <li class="menuitems"><a href="#">Lorem</a></li>
-                <li class="menuitems"><a href="#">About</a></li> -->
-                <li class="menuitems"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-            </ul>
+            <div class="webName">
+                <a href="/index.html">
+                    <h1 class="web-name">
+                        Lorem, ipsum
+                    </h1>
+                </a>
+            </div>
+            <div class="options">
+                <ul class="nav navbar-nav menu">
+                    <li class="menuitems active"><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <!-- <li class="menuitems"><a href="#">Lorem</a></li>
+                    <li class="menuitems"><a href="#">About</a></li> -->
+                    <li class="menuitems"><a href="/contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </div>
         </nav>
+        <div class="form-container">
+            <div class="form">
+                <form autocomplete="off" name="google-sheet">
+                    <table class="formTable">
+                        <tr>
+                            <td class="field">Full Name</td>
+                            <td><input type="text" name="name" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td class="field">Mobile No.</td>
+                            <td><input type="number" name="mob" id="mob"></td>
+                        </tr>
+                        <tr>
+                            <td class="field">Email</td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td class="field">Question / Comments</td>
+                            <td><input type="text" name="msg" id="msg"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit" value="Submit" name="submit" id="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <footer class="bg-dark text-primary footer">
+            <span class="text-light">Developed by <a class="name">Kushdeep Singh</a> and <a class="name">Jaskeerat Singh</a></span>
+        </footer>
+        <!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyA5SD7hzqtjQwYrUsHfCzN_RHdMckOH5-3fguMFQu30H3uE9Y/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script> -->
     </body>
 </html>

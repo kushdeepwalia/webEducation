@@ -19,13 +19,72 @@
     </head>
     <body>
         <nav class="navbar navbar-expand bg-dark header text-primary">
-            <a href="/index.html"><h1 class="web-name">Lorem, ipsum.</h1></a>
-            <ul class="nav navbar-nav menu">
-                <li class="menuitems active"><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <!-- <li class="menuitems"><a href="#">Lorem</a></li>
-                <li class="menuitems"><a href="#">About</a></li> -->
-                <li class="menuitems"><a href="/contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-            </ul>
+            <div class="webName">
+                <a href="/index.html">
+                    <h1 class="web-name">
+                        Lorem, ipsum
+                    </h1>
+                </a>
+            </div>
+            <div class="options">
+                <ul class="nav navbar-nav menu">
+                    <li class="menuitems active"><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <!-- <li class="menuitems"><a href="#">Lorem</a></li>
+                    <li class="menuitems"><a href="#">About</a></li> -->
+                    <li class="menuitems"><a href="/contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </div>
         </nav>
+        <div class="content-container">
+            <div class="nav-topics">
+                <ul class="nav nav-tabs" role="tablist">
+                    <a data-section-target="#HTML" data-li-target="#html">
+                        <li class="open-list nav-list" id="html">
+                            HTML
+                        </li>
+                    </a>
+                    <a data-section-target="#CSS" data-li-target="#css">
+                        <li class="close-list nav-list" id="css">
+                            CSS
+                        </li>
+                    </a>
+                    <a data-section-target="#BootStrap" data-li-target="#bootstrap">
+                        <li class="close-list nav-list" id="bootstrap">
+                            BootStrap
+                        </li>        
+                    </a>
+                    <a data-section-target="#JavaScript" data-li-target="#javascript">
+                        <li class="close-list nav-list" id="javascript">
+                            JavaScript
+                        </li>        
+                    </a>
+                </ul>
+            </div>
+            <section id="HTML" class="active border mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            HTML Tags
+                        </h3>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </section>
+            <section id="CSS" class="inactive border mb-4">
+                <span>B</span>
+            </section>
+            <section id="BootStrap" class="inactive border mb-4">
+                <span>C</span>
+            </section>
+            <section id="JavaScript" class="inactive border mb-4">
+                <span>D</span>
+            </section>
+        </div>
+        <footer class="bg-dark text-primary footer">
+            <span class="text-light">Developed by <a class="name">Kushdeep Singh</a> and <a class="name">Jaskeerat Singh</a></span>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>

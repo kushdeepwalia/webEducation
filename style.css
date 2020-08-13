@@ -7,8 +7,8 @@
     font-family: 'Dancing Script', cursive;
 */
 
-*{
-    font-family: 'Lobster', cursive;
+a:hover{
+    text-decoration: none;
 }
 
 .web-name{
@@ -17,19 +17,47 @@
     text-transform: uppercase;
     font-size: 2rem;
     padding-left: 15px;
+    color: white;
     padding-top: 5px;
 }
 
-.header{
+nav.header{
+    width: 100vw;
     height: 10vh;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
+    color: white;
 }
 
-a:hover{
+/* .webName{
+    
+}
+
+.options{
+
+} */
+
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuitems a:hover{
     text-decoration: none;
 }
 
+.name:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.name,.menuitems a{
+    color: white;
+}
 .menuitems{
     color: white;
     font-size: 20px;
@@ -47,7 +75,7 @@ a:hover{
 }
 
 .home-image{
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     background-color: rgba(0, 0, 0);
 }
@@ -73,5 +101,58 @@ button{
 }
 
 /* info.html */
+.content-container{
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-topics{
+    width: 100vw;
+    margin-bottom: 10px;
+}
+
+.nav-tabs{
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.nav-list{
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    height: 40px;
+    border-bottom: 1px solid grey;
+}
+
+section.active{
+    display: block;
+}
+
+section.inactive{
+    display: none;
+}
+
+.open-list{
+    border: 1px solid grey;
+    border-bottom: none !important;
+}
+
+/* .nav-list:hover .open-list{
+    
+} */
+
+.nav-list:hover{
+    border: 1px solid grey;
+    border-bottom: none;
+}
 
 /* contact.html */
+.form-container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
