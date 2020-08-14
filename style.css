@@ -135,3 +135,56 @@ section.inactive{
     justify-content: center;
     align-items: center;
 }
+
+/* home.html */
+/* .content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card > img {
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+} */
+.topic{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4rem ;
+    padding-top: 4rem;
+}
+
+.topic:nth-child(even){
+    background-color: #f1f1f1;
+}
+
+.topic-title{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    justify-content: center;
+    text-align: center;
+}
+
+.topic-title > h5{
+    font-size: 50px;
+    font-family: 'Red Rose' ;
+}
+
+.topic-title > p{
+    font-size: 25px;
+    font-family: 'Red Rose';
+}
+
+.topic a{
+    width: 15rem;
+    align-self: center;
+    color: white;
+    background-color: #616161;
+}
+
+.topic a:hover{
+    background-color: turquoise;
+}
