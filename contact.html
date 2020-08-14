@@ -41,7 +41,7 @@
         </nav>
         <div class="form-container">
             <div class="form">
-                <form autocomplete="off" name="google-sheet">
+                <form autocomplete="off" name="google-sheet" id="submit-form">
                     <table class="formTable">
                         <tr>
                             <td class="field">Full Name</td>
@@ -80,5 +80,24 @@
                 .catch(error => console.error('Error!', error.message))
             })
           </script> -->
+        <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbz4-P5FVphK0ldFBEvgKYTMvsPZWLvhG3aVfASwaqOnltp0hEQ/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
     </body>
 </html>
