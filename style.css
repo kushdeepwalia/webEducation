@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 a:hover{
     text-decoration: none;
 }
@@ -80,14 +83,11 @@ button{
 }
 
 /* info.html */
-.content-container{
-    width: 100vw;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 .nav-topics{
     width: 100vw;
+    padding-right: 45px;
     margin-bottom: 10px;
 }
 
