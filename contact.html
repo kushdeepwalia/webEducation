@@ -70,13 +70,13 @@
             <span class="text-light">Developed by <a class="name">Kushdeep Singh</a> and <a class="name">Jaskeerat Singh</a></span>
         </footer>
         <!-- <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyA5SD7hzqtjQwYrUsHfCzN_RHdMckOH5-3fguMFQu30H3uE9Y/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz4-P5FVphK0ldFBEvgKYTMvsPZWLvhG3aVfASwaqOnltp0hEQ/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(location.reload(),response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
             })
           </script> -->
@@ -90,7 +90,6 @@
                     success:function (response){
                         alert("Form submitted successfully")
                         window.location.reload()
-                        //window.location.href="https://google.com"
                     },
                     error:function (err){
                         alert("Something Error")
