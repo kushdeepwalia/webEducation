@@ -39,31 +39,35 @@
                 </div>
             </div>
         </nav>
-        <div class="form-container">
-            <div class="form">
-                <form autocomplete="off" name="google-sheet" id="submit-form">
-                    <table class="formTable">
-                        <tr>
-                            <td class="field">Full Name</td>
-                            <td><input type="text" name="name" id="name"></td>
-                        </tr>
-                        <tr>
-                            <td class="field">Mobile No.</td>
-                            <td><input type="number" name="mob" id="mob"></td>
-                        </tr>
-                        <tr>
-                            <td class="field">Email</td>
-                            <td><input type="email" name="email" id="email"></td>
-                        </tr>
-                        <tr>
-                            <td class="field">Question / Comments</td>
-                            <td><input type="text" name="msg" id="msg"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="center"><input type="submit" value="Submit" name="submit" id="submit"></td>
-                        </tr>
-                    </table>
-                </form>
+        <div class="container-fluid form-container">
+            <div class="row">
+                <div class="form-box">
+                    <form autocomplete="off" name="google-sheet" id="submit-form">
+                        <div class="form-group form-inline">
+                            <label for="Name">Full Name</label> &emsp;
+                            <input type="text" name="Full-Name" id="Name" class="form-control">
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="name-error"></span>
+                        <div class="form-group form-inline">
+                            <label for="Phone">Phone Number</label> &emsp;
+                            <input type="number" name="Phone" id="Phone" class="form-control">
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="number-error"></span>
+                        <div class="form-group form-inline">
+                            <label for="Email">Email</label> &emsp;
+                            <input type="email" name="Email-Id" id="Email" class="form-control">
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="email-error"></span>
+                        <div class="form-group form-inline">
+                            <label for="Message">Message</label> &emsp;
+                            <textarea name="Message" class="form-control" id="Message" cols="29" maxlength="100" rows="3" style="resize: none;"></textarea>
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="msg-error"></span>
+                        <div class="form-group form-inline button">
+                            <input type="submit" value="Submit" id="submit" class="btn btn-dark">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <footer class="bg-dark text-primary footer">
@@ -81,21 +85,94 @@
             })
           </script> -->
         <script>
-            $("#submit-form").submit((e)=>{
+            const contactForm = document.getElementById('submit-form')
+            const Name = document.getElementById('Name')
+            const Email = document.getElementById('Email')
+            const Phone = document.getElementById('Phone')
+            const Message = document.getElementById('Message')
+            var flag = 0,str;
+
+
+            contactForm.addEventListener('submit', (e) =>{
+                
                 e.preventDefault()
-                $.ajax({
-                    url:"https://script.google.com/macros/s/AKfycbz4-P5FVphK0ldFBEvgKYTMvsPZWLvhG3aVfASwaqOnltp0hEQ/exec",
-                    data:$("#submit-form").serialize(),
-                    method:"post",
-                    success:function (response){
-                        alert("Form submitted successfully")
-                        window.location.reload()
-                    },
-                    error:function (err){
-                        alert("Something Error")
-        
-                    }
-                })
+                if(Name.value === '' || Name.value === null){
+                    document.getElementById('name-error').innerText = "* Please Enter Valid Name"
+                    Name.style.outline = "2px solid rgb(220 53 69)"
+                    flag = 0;
+                }
+                else
+                {
+                    document.getElementById('name-error').innerText = ""
+                    Name.style.outline = "none"
+                    flag = 1;
+                }
+                Phone.value.toString();
+                var b=Phone.value.length;
+                if(Phone.value === '' || Phone.value === null || b !== 10){
+                    document.getElementById('number-error').innerText = "* Please Enter Valid Phone Number"
+                    Phone.style.outline = "2px solid rgb(220 53 69)"
+                    flag = 0;
+                }
+                else
+                {
+                    document.getElementById('number-error').innerText = ""
+                    Phone.style.outline = "none"
+                    flag = 1;
+                }
+                
+                if(Message.value.length === 0 || Message.value.length <= 10){
+                    document.getElementById('msg-error').innerText = "* Please Enter Valid Message"
+                    Message.style.outline = "2px solid rgb(220 53 69)"
+                    flag = 0;
+                }
+                else
+                {
+                    document.getElementById('msg-error').innerText = ""
+                    Message.style.outline = "none"
+                    flag = 1;
+                }
+
+                a=Email.value;
+                f1=a.indexOf('@');
+                f2=a.indexOf('@',f1+1);
+                e1=a.indexOf('.');
+                e2=a.indexOf('.',e1+1);
+                n=a.length;
+
+                if(!(f1>0 && f2==-1 && e1>0 && e2==-1 && f1!=e1+1 && e1!=f1+1 && f1!=n-1 && e1!=n-1))
+                {   
+                    document.getElementById('email-error').innerText = "* Please Enter Valid Email"
+                    Email.style.outline = "2px solid rgb(220 53 69)"
+                    flag = 0;
+                }
+                else
+                {
+                    flag = 1;
+                }
+
+                if(flag==0){
+                    e.preventDefault()
+                }
+                else
+                {
+                    $("#submit-form").submit((e)=>{
+                        e.preventDefault()
+                        $.ajax({
+                            url:"https://script.google.com/macros/s/AKfycbz4-P5FVphK0ldFBEvgKYTMvsPZWLvhG3aVfASwaqOnltp0hEQ/exec",
+                            data:$("#submit-form").serialize(),
+                            method:"post",
+                            success:function (response){
+                                alert("Form submitted successfully")
+                                window.location.reload()
+                            },
+                            error:function (err){
+                                alert("Something Error")
+                
+                            }
+                        })
+                    })
+                }
             })
         </script>
     </body>

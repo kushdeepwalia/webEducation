@@ -136,6 +136,58 @@ section.inactive{
     align-items: center;
 }
 
+.form-box{
+    box-shadow: 0 0 10px grey;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+.form-group{
+    margin-top: 5px;
+    margin-bottom: unset;
+}
+
+input{
+    width: 250px !important;
+}
+
+.button{
+    width: inherit !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    width: 150px;
+    height: 43px;
+    padding-top: 0px;
+    font-size: 25px;
+}
+
+#Name{
+    position: relative;
+    left: 50px;
+}
+
+#Email{
+    position: relative;
+    left: 84px;
+}
+
+#Message{
+    position: relative;
+    left: 60px;
+}
+
+#Phone{
+    position: relative;
+    left: 14px;
+}
+
 /* home.html */
 /* .content{
     display: flex;
