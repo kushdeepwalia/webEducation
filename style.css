@@ -183,6 +183,11 @@ input{
     left: 60px;
 }
 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button{
+    display: none;
+}
+
 #Phone{
     position: relative;
     left: 14px;
