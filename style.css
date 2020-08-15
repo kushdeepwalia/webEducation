@@ -105,7 +105,7 @@ button{
     opacity: 0;
     height: 17em;
     animation-name: html;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
@@ -130,8 +130,8 @@ button{
     height: 17em;
     opacity: 0;
     animation-name: css;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -140,8 +140,8 @@ button{
     height: 12em;
     opacity: 0;
     animation-name: bootstrap;
-    animation-duration: 3s;
-    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 
