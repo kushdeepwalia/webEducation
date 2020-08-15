@@ -45,22 +45,22 @@
                     <form autocomplete="off" name="google-sheet" id="submit-form">
                         <div class="form-group form-inline">
                             <label for="Name">Full Name</label> &emsp;
-                            <input type="text" name="Full-Name" id="Name" class="form-control">
+                            <input type="text" name="Full-Name" id="Name" placeholder="Enter Your Full Name" class="form-control">
                         </div>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="name-error"></span>
                         <div class="form-group form-inline">
                             <label for="Phone">Phone Number</label> &emsp;
-                            <input type="number" name="Phone" id="Phone" class="form-control">
+                            <input type="number" name="Phone" id="Phone" placeholder="Enter Your Phone Number" title="Don't Add 0 or +91 " class="form-control">
                         </div>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="number-error"></span>
                         <div class="form-group form-inline">
                             <label for="Email">Email</label> &emsp;
-                            <input type="email" name="Email-Id" id="Email" class="form-control">
+                            <input type="email" name="Email-Id" id="Email" placeholder="Enter Your Email Address" class="form-control">
                         </div>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="email-error"></span>
                         <div class="form-group form-inline">
                             <label for="Message">Message</label> &emsp;
-                            <textarea name="Message" class="form-control" id="Message" cols="29" maxlength="100" rows="3" style="resize: none;"></textarea>
+                            <textarea name="Message" class="form-control" id="Message" cols="29" maxlength="100" placeholder="Enter your Queries, Reviews, or Comments" title="max length 100" rows="3" style="resize: none;"></textarea>
                         </div>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="text-danger" id="msg-error"></span>
                         <div class="form-group form-inline button">
@@ -148,6 +148,8 @@
                 }
                 else
                 {
+                    document.getElementById('email-error').innerText = ""
+                    Email.style.outline = "none"
                     flag = 1;
                 }
 
