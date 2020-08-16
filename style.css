@@ -238,7 +238,7 @@ input{
     font-size: 25px;
 }
 
-/* #Name{
+#Name{
     position: relative;
     left: 50px;
 }
@@ -251,17 +251,17 @@ input{
 #Message{
     position: relative;
     left: 60px;
-} */
+}
+
+#Phone{
+    position: relative;
+    left: 14px;
+}
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button{
     display: none;
 }
-
-/* #Phone{
-    position: relative;
-    left: 14px;
-} */
 
 /* home.html */
 /* .content{
@@ -349,9 +349,20 @@ input{
         top: 0;
     }
 
-
     .topic:last-child img{
         width: 13rem !important;
+    }
+
+    #Name,#Email,#Message,#Phone{
+        left: 0px;
+    }
+
+    .form-inline{
+        display: block;
+    }
+
+    .form-inline:last-child{
+        display: flex;
     }
 }
 
