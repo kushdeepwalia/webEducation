@@ -224,6 +224,11 @@ input{
     width: 250px !important;
 }
 
+textarea{
+    width: 250px !important;
+    height: 80px !important;
+}
+
 .button{
     width: inherit !important;
     height: 60px !important;
