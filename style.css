@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 a:hover{
     text-decoration: none;
@@ -59,7 +61,7 @@ nav.header{
 .home-image{
     height: 80vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0);
+    /* background-color: rgba(0, 0, 0); */
 }
 
 button{
@@ -72,7 +74,7 @@ button{
 }
 
 .image{
-    background-image: url('Images/home-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/home-bg.jpg");
     width: inherit;
     height: inherit;
     background-size: 100vw 80vh;
@@ -80,7 +82,7 @@ button{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 
@@ -236,7 +238,7 @@ input{
     font-size: 25px;
 }
 
-#Name{
+/* #Name{
     position: relative;
     left: 50px;
 }
@@ -249,17 +251,17 @@ input{
 #Message{
     position: relative;
     left: 60px;
-}
+} */
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button{
     display: none;
 }
 
-#Phone{
+/* #Phone{
     position: relative;
     left: 14px;
-}
+} */
 
 /* home.html */
 /* .content{
@@ -346,6 +348,11 @@ input{
     .content-image-container{
         top: 0;
     }
+
+
+    .topic:last-child img{
+        width: 13rem !important;
+    }
 }
 
 @media only screen and (max-width: 425px){
@@ -384,6 +391,10 @@ input{
 
     .content-image{
         padding: 10px 13px;
+    }
+
+    .topic img{
+        display: none;
     }
 
     .footer{
