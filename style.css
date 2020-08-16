@@ -75,7 +75,7 @@ button{
     background-image: url('Images/home-bg.jpg');
     width: inherit;
     height: inherit;
-    background-size: 100vw 90vh;
+    background-size: 100vw 80vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,11 +83,16 @@ button{
     opacity: 0.5;
 }
 
+
 .content-image-container{
+    width: 70%;
+    height: 60%;
     display: flex;
     /* background-color: red; */
+    justify-content: center;
     align-items: center;
     position: relative;
+    margin: 0 auto;
     top: -20px;
 }
 
@@ -96,7 +101,7 @@ button{
 }
 
 .content-image:first-child{
-    padding-left: 0;
+    padding-left: 0px;
     padding-right: 0;
 }
 
@@ -312,4 +317,76 @@ input{
 
 .topic a:hover{
     background-color: turquoise;
+}
+
+@media screen and (max-width:768px){
+    
+    #img1{
+        width: 9em;
+        height: 10em;
+    }
+    #img2{
+        width: 7em;
+        height: 10em;
+    }
+    #img3{
+        width: 8em;
+        height: 8em;
+    }
+
+    .btn-text{
+        font-size: 20px;
+    }
+
+    .content-image:first-child{
+        padding-left: 45px;
+        padding-right: 0;
+    }
+
+    .content-image-container{
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .web-name{
+        font-size: 1.2rem;
+    }   
+
+    nav.header,.footer{
+        height: 8vh;
+    }
+
+    #img1{
+        width: 8em;
+        height: 8em;
+    }
+    #img2{
+        width: 6em;
+        height: 8em;
+    }
+    #img3{
+        width: 6em;
+        height: 6em;
+    }
+
+    .menu > a{
+        font-size: 1rem;
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+        /* height: 8vh; */
+    }
+
+    .content-image:first-child{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content-image{
+        padding: 10px 13px;
+    }
+
+    .footer{
+        font-size: unset;
+    }
 }
